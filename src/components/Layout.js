@@ -14,7 +14,7 @@ import Avatar from "@mui/material/Avatar";
 
 export default function Layout({children}) {
 
-   
+   //storing list items in an array
     const menuItems = [
         {
             text: 'My Notes',
@@ -71,8 +71,10 @@ export default function Layout({children}) {
         }        
     }
 
-
+    //useHistory hook provides access to the history instance that may use to navigate
     const history = useHistory()
+
+    // returns the location object that represents the current URL.
     const location = useLocation()
 
 
